@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/activity_syscamrea_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="视频选择" />
+
+    <Button
+        android:id="@+id/activity_syscamrea_takevideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_syscamrea_video"
+        android:text="摄像" />
+
+    <Button
+        android:id="@+id/activity_syscamrea_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_syscamrea_takevideo"
+        android:text="相册选择" />
+
+    <Button
+        android:id="@+id/activity_syscamrea_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_syscamrea_photo"
+        android:text="拍照" />
+
+    <ImageView
+        android:id="@+id/activity_syscamrea_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_syscamrea_takephoto" />
+
+</RelativeLayout>
